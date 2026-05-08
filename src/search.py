@@ -24,13 +24,3 @@ def find(index, query):
 
     return list(results)
 
-
-if __name__ == "__main__":
-    from crawler import crawl
-    from indexer import build_index
-
-    pages = crawl()
-    index = build_index(pages)
-
-    print(find(index, "life"))
-    print(find(index, "good friends"))

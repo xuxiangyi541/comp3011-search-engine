@@ -38,8 +38,3 @@ def crawl():
     return pages
 
 
-if __name__ == "__main__":
-    data = crawl()
-    print(f"\nTotal pages: {len(data)}")
-    for k, v in data.items():
-        print(k, "->", v[:60], "...")
